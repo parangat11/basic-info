@@ -18,8 +18,8 @@ http.createServer((req, res) => {
                 return res.end()
             })
             break;
-        case 'contact':
-            fs.readFile('contact.html', (err, data) => {
+        case 'contact-me':
+            fs.readFile('contact-me.html', (err, data) => {
                 res.writeHead(200, {'Content-type': 'text/html'})
                 res.write(data)
                 return res.end()
